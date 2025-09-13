@@ -487,6 +487,9 @@ li{
 .y{
     font-size: 30px;
 }
+.d{
+    color: var(--global-clr);
+}
 
 
 
