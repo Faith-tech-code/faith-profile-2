@@ -1,0 +1,182 @@
+.navbar a, .navbar ul li{
+    opacity: 0;
+    animation: slideRight 1.5s ease-in-out forwards;
+    animation-delay: calc(0,2s * var(--i));
+
+}
+@keyframes slideRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-150px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.hero-image-animation {
+    opacity: 0;
+    animation: zommBounce 2s ease-in-out forwards;
+    animation-delay: 1s;
+}
+
+@keyframes zommBounce {
+    0%{
+        opacity: 0;
+        transform: scale(0.5) rotate(-40deg);
+
+    }
+    50%{
+        transform: scale(1.1) rotate(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0);
+    }
+}
+.hero-content-animation > *{
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: calc(0.5s * var(--i));
+}
+@keyframes fadeIn {
+    0%{
+        opacity: translateY(50px) ;
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+
+}
+.stats-animation {
+     opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 2s;
+}
+@keyframes fadeIn {
+    0%{
+        opacity: translateY(50px) ;
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+}
+/*----------css for small screens--------------*/
+nav .fas{
+    display: none;
+
+}
+@media only screen and (max-width: 600px) {
+    #header{
+       
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+
+    }
+    .header-text h1{
+        font-size: 30px;
+
+
+    }
+    nav .fas{
+    display: block;
+    font-size: 25px;
+    }
+    nav ul{
+        background: var(--global-clr);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+
+
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title{
+        font-size: 40px;
+
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 14px;
+        margin-top: -40px;
+        display: block;
+
+
+    }
+
+    
+}
+#msg{
+    color: var(--global-clr);
+}
+
+/* Stats Section */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.stats .stat {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    min-width: 200px;
+
+}
+.stats .stat:not(:last-child){
+    border-right: 1px solid var(--global-clr);
+    padding-right: 5%;
+}
+.stats .stat h2{
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+.stats .stat span{
+    display: inline-block;
+    color: var(--light-text-clr);
+    font-size: 1.1rem;
+
+}
