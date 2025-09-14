@@ -15,16 +15,16 @@
     <header>
       <nav class="navbar">
         <a href="index.html" class="logo" style="--i: 1">Akiror <span>Faith</span></a>
-        <ul>
-          <li><a href="#" class="active" style="--i: 2">Home</a></li>
+        <ul id="sidemenu">
+          <li><a href="#home" class="active" style="--i: 2">Home</a></li>
           <li><a href="#about"style="--i: 3" >About</a></li>
           <li><a href="#skills"style="--i: 4" >Skills</a></li>
           <li><a href="#services"style="--i: 5" >Services</a></li>
           <li><a href="#portfolio"style="--i: 6" >Portfolio</a></li>
           <li><a href="#contact"style="--i: 7" >Contact</a></li>
-          <i class="fas fa-solid fa-square-xmark"></i>
+          <i class="fas fa-solid fa-square-xmark" onclick="closemenu()"></i>
         </ul>
-        <i class="fas fa-solid fa-bars"></i>
+        <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
         <a href="#" class="cvbtn"style="--i: 8" 
           >Download CV<i class="fa-solid fa-download"></i
         ></a>
@@ -36,11 +36,11 @@
          <img src="IMG_00905-removebg-preview1.png" alt="image" />
        </div>
        <div class="hero-content hero-content-animation">
-         <h3 style="--i: 1" >Hello, I'm</h3>
-         <h1 style="--i: 2" >Faith</h1>
+         <h3 style="--i: 1" >Hello, I'm </h3>
+         <h1 style="--i: 2" > Faith</h1>
          <h2 class="text-animation" style="--i: 3" >And I'm a <span></span></h2>
          <p style="--i: 4" >
-          I'm an independent graphic designer and an Illustrator who's eager to integrate creative and innovative designs and concepts into your personal or professional projects. As a passionate and versatile designer with a keen eye for detail and a knack for problem-solving, I thrive on creative challenges and enjoy collaborating with others to bring ideas to life.
+          From coding to design to people management, I connect technology, creativity, and strategy to deliver results. <br>Full-stack & WordPress developer, UI/UX and graphics designer, with HR expertise building functional, beautiful digital solutions that connect people and technology.
          </p>
 
          <div class="social-icons" style="--i: 5">
@@ -88,6 +88,7 @@
       <div class="row">
         <div class="about-col-1">
            <h1 class="sub-title">About Me</h1>
+           <p class="l">I am a versatile professional skilled in full-stack development, WordPress, UI/UX design, and graphics design, with a strong foundation in human resource management. I create digital solutions that are both functional and visually engaging, blending technical expertise with creative design. My HR background equips me with strong leadership, communication, and team collaboration skills, enabling me to deliver projects that not only meet technical standards but also align with people and organizational needs.</p>
           <div class="tab-titles">
             <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
             <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -96,10 +97,10 @@
           <div class="tab-contents active-tab" id="skills">
             <ul>
               <li><span>UI/UX</span><br>Designing Web/App Interfesces</li>
-              <li><span>Web/App Development</span><br>Web app Development and Building Android/iOS Apps</li>
+              <li><span>Wordpress Development</span><br>Designing and implementing attractive and functional websites for clients ensuring user-friendly design, and optimizing SEO.</li>
               <li><span>Graphics Design</span><br>Creating Visuals for Websites, Apps, Print, Ads and More...</li>
               <li><span>Full-Stack Development</span><br>Front-End and Back-End Development</li>
-              <li><span> HR Management</span><br>coordinating, managing, and allocating human capital, or employees.
+              <li><span> HR Management</span><br>Coordinating, managing, and allocating human capital, or employees.
               </li>
             </ul>
           </div>
@@ -109,6 +110,7 @@
               <li><span>2025</span><br>Coding Training at SheCodes</li>
               <li><span>2025</span><br>WebDevelopment Training at SheCodes</li>
               <li><span>2023 - Current</span><br> Founder and Graphics Designer at Faith Creative Studio</li>
+              <li><span>2020 - Current</span><br> Wordpress Development</li>
               <li><span>2019 - Current</span><br>HR Management; coordinating, managing, and allocating human capital, or
                 employees.</li>
             </ul>
@@ -118,7 +120,8 @@
               <li><span>2025</span><br>Programing Training at Codequeen14</li>
               <li><span>2025</span><br>Coding Training at SheCodes</li>
               <li><span>2025</span><br>WebDevelopment Training at SheCodes</li>
-              <li><span>2022</span><br> Self Taught Graphics Designer</li>
+              <li><span>2022</span><br>Self Taught Graphics Designer</li>
+              <li><span>2020</span><br>Self Taught Wordpress Developer</li>
               <li><span>2019</span><br>Bachelors in Human Resource Management.</li>
             </ul>
           </div>  
@@ -140,20 +143,20 @@
       <div class="services-list">
         <div>
           <i class="fa-solid fa-spiral"></i>
-          <h2>Full-Stack Development</h2>
-          <p>I like different programming languages to handle front-end and back-end development, ensuring seamless integration and functionality of web applications.</p>
+          <h2 class="k">Full-Stack Development</h2>
+          <p class="t">I build and maintain scalable, secure, and user-friendly web applications from end to end. My expertise spans both front-end development (HTML, CSS, JavaScript, React, and responsive design) and back-end development (Node.js, PHP, MySQL, REST APIs). I enjoy solving complex problems with clean code and implementing systems that balance functionality with performance.</p>
           <a class="d" href="#">Learn More</a>
         </div>
         <div>
           <i class="fa-solid fa-laptop-code"></i>
-          <h2>Graphics Design</h2>
-          <p>I'm a creative person driven by my passion for design. I'm proficient with graphic tools and have an artistic approach towards everything I create.</p>
+          <h2 class="k">Graphics Design</h2>
+          <p class="t">I have a passion for visual storytelling and design graphics that capture attention while delivering clear messages. Skilled in tools like Adobe Photoshop, Illustrator, and Canva, I design logos, marketing materials, social media content, and book covers. My goal is to blend creativity with strategy to produce designs that resonate with audiences.</p>
           <a class="d" href="#">Learn More</a>
         </div>
         <div>
           <i class="fa-solid fa-people-group"></i>
-          <h2>Human Resource Management</h2>
-          <p>I enjoy being able to help people fulfil their potential by hiring the right people and then helping them thrive in their jobs.</p>
+          <h2 class="k">Human Resource Management</h2>
+          <p class="t">With a background in human resource management, I bring expertise in talent acquisition, employee relations, training, and organizational development. I’m passionate about fostering healthy workplace cultures, promoting employee growth, and aligning HR strategies with business goals. My HR perspective strengthens my leadership, communication, and team collaboration in all other fields I work in.</p>
           <a class="d" href="#">Learn More</a>
         </div>
         
