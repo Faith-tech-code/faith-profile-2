@@ -75,8 +75,8 @@ document.addEventListener('DOMContentLoaded', function() {
             setTimeout(() => {
                 this.innerHTML = '<i class="fas fa-external-link-alt"></i>';
                 this.style.pointerEvents = 'auto';
-                // Here you would typically open the project link
-                console.log('Opening project...');
+                // Open the project link in a new tab
+                window.open(this.href, '_blank');
             }, 1500);
         });
     });
